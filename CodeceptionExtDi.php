@@ -11,9 +11,9 @@ use Yiisoft\Injector\Injector;
 
 /**
  * Class CodeceptionExtDI
- * Расширение для Codeception
- * Позволяет внедрять зависимости используя конфигурации проекта
- * Пути к конфигурациям прописываются в месте объявления расширения
+ * Extension Codeception
+ * Allows injecting dependencies using project configurations
+ * Configuration paths are written in the place where the extension is declared.
  * extensions:
  *   enabled:
  *       - tests\_support\extensions\CodeceptionExtDI
@@ -26,7 +26,7 @@ use Yiisoft\Injector\Injector;
 class CodeceptionExtDI extends Extension
 {
     /**
-     * Метод посредством которого имеется возможность внедрять зависимости
+     * Method through which it is possible to inject dependencies
      * @var string
      */
     protected $injectMethodName = '_dependencies';
